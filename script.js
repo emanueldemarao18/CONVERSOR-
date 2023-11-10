@@ -5,7 +5,8 @@ function calcularConversao() {
     var descontoTotal = desconto2Percent + desconto14Percent;
     var totalComDescontos = valor - descontoTotal;
     var totalpercent = (totalComDescontos * 0.03);
-    var totalpercentfinal = (totalpercent*0.14);
+    var totalpercent2 = (totalpercent*0.14);
+    var totalpercentfinal=(totalpercent+totalpercent2);
     var totalEurosNoATM = totalComDescontos - totalpercentfinal;
     var cambioAtual = parseFloat(document.getElementById('cambioAtual').value);
     var resultadoFinal = totalEurosNoATM / cambioAtual;
