@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Conversor de Moeda</h2>
+
+<form id="conversorForm">
+    <label for="valorConverter">Digite o valor a converter:</label>
+    <input type="number" id="valorConverter" step="0.01" required>
+
+    <label for="cambioAtual">Digite o câmbio atual:</label>
+    <input type="number" id="cambioAtual" step="0.01" required>
+
+    <button type="button" onclick="calcularConversao()">Calcular</button>
+
+    <div id="resultados"></div>
+</form>
+
+<footer>
+    <p>Desenvolvido por Emanuel de Marão e Leonardo Dias</p>
+    <p>Emails: emanueldemarao@gmail.com e ldias3398@gmail.com</p>
+    <p>Números de contato: +244 935921086 e +244 949872165</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
